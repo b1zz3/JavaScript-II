@@ -3,6 +3,12 @@
 // Keep it simple! Remember a closure is just a function
 // that manipulates variables defined in the outer scope.
 // The outer scope can be a parent function, or the top level of the script.
+var globalA = 20;
+
+function testClosure(num) {
+  return num * globalA;
+}
+console.log(testClosure(4));
 
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
